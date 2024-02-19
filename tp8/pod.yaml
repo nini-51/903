@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: groupede5lesbg
+  labels:
+    app: motd
+spec:
+  containers:
+  - name: motd
+    image: groupede5lesbg/motd-api:1.0.0
