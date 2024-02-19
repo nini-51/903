@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: motd-service
+spec:
+  selector:
+    app: motd  # Correspond aux labels du pod
+  ports:
+    - protocol: TCP
+      port: 80  # Port sur lequel le service est accessible
+      targetPort: 8080  # Port sur lequel le pod écoute
+  type: ClusterIP  # Type de service
