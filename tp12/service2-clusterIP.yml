@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip
+  namespace: groupede5lesbg
+spec:
+  selector:
+    app: deployment
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
