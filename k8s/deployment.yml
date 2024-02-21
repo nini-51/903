@@ -1,0 +1,19 @@
+  GNU nano 7.2                   deployment.yml                             apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: groupede5lesbg
+  labels:
+    app: motd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: motd
+  template:
+    metadata:
+      labels:
+        app: motd
+    spec:
+      containers:
+      - name: motd
+        image: groupede5lesbg/motd-api:1.0.0
