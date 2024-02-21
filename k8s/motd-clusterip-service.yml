@@ -1,0 +1,14 @@
+  GNU nano 7.2                service-clusterIP.yml                         apiVersion: v1
+kind: Service
+metadata:
+  name: motd-clusterip-service
+spec:
+  selector:
+    app: motd  # Correspond aux labels du pod
+  ports:
+    - protocol: TCP
+      port: 80  # Port sur lequel le service est accessible
+      targetPort: 8080  # Port sur lequel le pod ecoute
+  type: "ClusterIP"  # Type de service
+
+
