@@ -1,2 +1,2 @@
 # 903
-groupede5lesbag/motd-api
+DockerHub : groupede5lesbg/motd-api:1.0.0
