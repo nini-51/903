@@ -6,13 +6,14 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: groupede5lesbg.amnay.fr
+  - host: groupede5lesbag.amnay.fr
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: clusterip
+            name: motd-clusterip-service
             port:
               number: 80
+
